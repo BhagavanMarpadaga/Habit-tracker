@@ -27,8 +27,8 @@ module.exports.createHabit=async function(req,res)
             {
                 let curday={
                     action:'pending',
-                    date:`${moment('2022-01-05').subtract(i, 'days').format('YYYY-MM-DD')}`,
-                    day:`${moment('2022-01-05').subtract(i, 'days').format('dddd')}`
+                    date:`${moment().subtract(i, 'days').format('YYYY-MM-DD')}`,
+                    day:`${moment().subtract(i, 'days').format('dddd')}`
                 }
                 weekArray.push(curday);
 
@@ -37,7 +37,7 @@ module.exports.createHabit=async function(req,res)
                 user:req.user.id,
                 habitname:req.body.habitname,
                 days:weekArray,
-                date:`${moment('2022-01-05').format('YYYY-MM-DD')}`
+                date:`${moment().format('YYYY-MM-DD')}`
             });
 
             user.habits.push(newHabit);
