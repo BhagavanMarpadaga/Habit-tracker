@@ -61,6 +61,14 @@
     max-height:67%;
     overflow-y: scroll;
 }
+.list-view .habit-name
+{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
 .display-flex
 {
     list-style-type: none;
@@ -82,7 +90,7 @@
 .calender-view
 {
     position: relative;
-    top: 20px;
+
 }
 .calender-view .cal-item
 {   text-align: center;
